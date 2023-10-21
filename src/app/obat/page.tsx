@@ -1,6 +1,6 @@
 "use client";
-import PageTitle from "@/component/PageTitle";
-import TableObat from "@/component/TableObat";
+import PageTitle from "@/components/PageTitle";
+import TableObat from "@/components/TableObat";
 import React from "react";
 
 const Page = () => {

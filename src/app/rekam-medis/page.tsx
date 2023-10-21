@@ -1,6 +1,6 @@
 "use client";
-import PageTitle from "@/component/PageTitle";
-import TableRekamMedis from "@/component/TableRekamMedis";
+import PageTitle from "@/components/PageTitle";
+import TableRekamMedis from "@/components/TableRekamMedis";
 import React from "react";
 
 const Page = () => {

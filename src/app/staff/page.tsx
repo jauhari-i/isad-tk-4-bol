@@ -1,6 +1,6 @@
 "use client";
-import PageTitle from "@/component/PageTitle";
-import TableStaff from "@/component/TableStaff";
+import PageTitle from "@/components/PageTitle";
+import TableStaff from "@/components/TableStaff";
 import React from "react";
 
 const Page = () => {

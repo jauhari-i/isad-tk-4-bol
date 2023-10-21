@@ -1,6 +1,6 @@
 "use client";
 
-import PageTitle from "@/component/PageTitle";
+import PageTitle from "@/components/PageTitle";
 import React from "react";
 
 const Page = () => {
