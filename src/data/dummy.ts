@@ -286,7 +286,7 @@ export const generateStaffData = (count: number) => {
 };
 
 export interface Medicine {
-  id: number;
+  id: string;
   name: string;
   composition: string;
   description: string;
@@ -302,7 +302,7 @@ export const generateMedicineData = (count: number) => {
   const faker = fakerID_ID;
 
   const newMedicine: Medicine[] = medicineRawData.map((medicine) => {
-    const id = lastId + 1;
+    const id = faker.string.uuid();
     const name = medicine.medicineName;
     const composition = medicine.composition;
     const description = medicine.uses;

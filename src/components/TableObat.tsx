@@ -20,7 +20,7 @@ moment.locale("id");
 const TableObat = () => {
   const [open, setOpen] = React.useState(false);
   const [page, setPage] = React.useState(1);
-  const [selected, setSelected] = React.useState<readonly number[]>([]);
+  const [selected, setSelected] = React.useState<readonly string[]>([]);
   const [data, setData] = React.useState<Medicine[]>([]);
   const [tempData, setTempData] = React.useState<Medicine[]>([]);
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -154,9 +154,9 @@ const TableObat = () => {
                       <Checkbox
                         size="sm"
                         checked={selected.indexOf(item.id) !== -1}
-                        onChange={(event) => {
+                        onChange={(_event) => {
                           const selectedIndex = selected.indexOf(item.id);
-                          let newSelected: readonly number[] = [];
+                          let newSelected: readonly string[] = [];
 
                           if (selectedIndex === -1) {
                             newSelected = newSelected.concat(selected, item.id);
